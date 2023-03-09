@@ -8,11 +8,13 @@ export const TabelaProdutos: React.FC<TabelaProdutosProps> = ({ produtos }) => {
   return (
     <table className="table is-striped is-hoverable">
       <thead>
-        <th>Código</th>
-        <th>SKU</th>
-        <th>Nome</th>
-        <th>Preço</th>
-        <th></th>
+        <tr>
+          <th>Código</th>
+          <th>SKU</th>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th></th>
+        </tr>
       </thead>
       <tbody>
         {produtos.map((produto) => (
